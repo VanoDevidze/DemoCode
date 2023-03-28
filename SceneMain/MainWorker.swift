@@ -1,8 +1,5 @@
-
 import UIKit
 
 class MainWorker {
-    func doSomeWork() {
-        
-    }
+    func doSomeWork() {}
 }

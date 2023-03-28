@@ -1,11 +1,7 @@
-
 import UIKit
 
 enum Main {
-    // MARK: Use cases
-    
     enum Model {
-        
         struct Request {
             enum RequestType {
                 case getBiologicalItems
@@ -13,7 +9,6 @@ enum Main {
                 case getCategoryItems
             }
         }
-        
         struct Response {
             enum ResponseType {
                 case presentBiological(bio: BioResponse)
@@ -21,7 +16,6 @@ enum Main {
                 case presentCategory(category: CategoryResponse)
             }
         }
-        
         struct ViewModel {
             enum ViewModelType {
                 case displaySetBio(mainListViewModel: MainListViewModel)
@@ -32,9 +26,7 @@ enum Main {
     }
 }
 
-// MARK: Cell model
 struct MainListViewModel {
-    
     struct Cell: MainListViewModelProtocol {
         var name: String
         var nameInter: String
@@ -45,7 +37,6 @@ struct MainListViewModel {
     let cells: [Cell]
 }
 
-
 struct MenuListViewModel {
     struct Item: MenuViewModelProtocol {
         var name: String
@@ -53,7 +44,6 @@ struct MenuListViewModel {
     }
     let items: [Item]
 }
-
 
 struct CategoryViewModel {
     struct Item: CategoryViewModelProtocol {
